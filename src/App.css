@@ -32,6 +32,22 @@ App-logo {
   color: #61dafb;
 }
 
+.Body{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.app_container{
+   background-color: white;
+    width: 1024px;
+    height: 100%;
+    display: flex;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

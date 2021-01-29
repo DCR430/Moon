@@ -3,7 +3,8 @@ import './Stats.css'
 
 function Stats() {
     return (
-        <div>
+        <div className="stats">
+            <div></div>
             
         </div>
     )

@@ -15,7 +15,6 @@ function App() {
           <Feed/>
           <Stats/>
         </div>
-
       </div>
     
     </div>
