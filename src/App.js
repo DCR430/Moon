@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Header'
+import Feed from './Feed'
+import Stats from './Stats'
 
 function App() {
   return (
@@ -9,6 +11,10 @@ function App() {
       <Header/>
       </div>
       <div className="Body">
+        <div className="app_container">
+          <Feed/>
+          <Stats/>
+        </div>
 
       </div>
     
