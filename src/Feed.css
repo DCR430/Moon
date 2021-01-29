@@ -1,5 +1,16 @@
 .Feed{
-    background-color: white;
+    border: 1px solid #f0c420;
     flex: 0.7;
+    color:white
   }
   
+  .feed_portfolio{
+      text-align: left;
+  }
+  .feed_portfolio h1{
+    margin:0;
+    }
+
+    .feed_portfolio p{
+        margin-top: 0;
+    }
