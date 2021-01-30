@@ -7,8 +7,8 @@ function LineGraph() {
 
     const data = [
         {
-            x:10,
-            y:20
+            x:20,
+            y:45
 
         },
         {
@@ -51,7 +51,7 @@ function LineGraph() {
                         borderColor:"#f0c420",
                         borderwidth:3,
                         pointBorderColor: "#f0c420",
-                        pointBackgroundColor:"red",
+                        pointBackgroundColor:"#f0c420",
                         pointHoverBackgroundColor:"#f0c420",
                         pointHoverBorderColor:"#000000",
                         pointHoverBorderWidth:4,
