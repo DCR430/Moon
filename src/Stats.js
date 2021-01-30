@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react'
 import './Stats.css'
 import axios from 'axios'
-import StatsRow from './StatsRow'
+import StatsRow from './StatsRow.js'
 
 
 const TOKEN = "c0as7qf48v6sc0grrrp0"
@@ -37,7 +37,7 @@ function Stats() {
         Promise.all(promises)
         .then(()=>{
             setstockData(tempStockData)
-            console.log(tempStockData)
+            // console.log(tempStockData)
         })
         },[])
     
@@ -58,15 +58,14 @@ function Stats() {
             </div>
             <div className="stats_conent">
                 <div className="stats_row">
-                    {stockData.map((stock)=>{
+                    {stockData.map((stock)=>
                     <StatsRow
                  key={stock.name}
                  name={stock.name}
                  openPrice={stock.o}
                  price={stock.c}
-                 
-                    />
-             })}
+                 />
+             )}
               </div>
             </div>
         </div>
