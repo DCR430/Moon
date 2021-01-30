@@ -77,11 +77,17 @@ function LineGraph() {
                         },
                         ticks:{
                             display:false
+                        },
+                        gridLines: {
+                            color: "rgba(0, 0, 0, 0)",
                         }
                     }],
                     yAxes:[{
                         ticks:{
                             display: false
+                        },
+                        gridLines: {
+                            color: "rgba(0, 0, 0, 0)",
                         }
                     }]
                 }

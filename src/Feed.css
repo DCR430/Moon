@@ -14,3 +14,10 @@
     .feed_portfolio p{
         margin-top: 0;
     }
+   .chart{
+       width: 100%;
+   }
+   .feed_chart{
+        display: flex;
+        flex-direction: column;
+   }
