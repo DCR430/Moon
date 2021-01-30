@@ -13,7 +13,11 @@ function LineGraph() {
             x:15,
             y:10
 
-        }
+        },
+        {
+        x:12,
+        y:4 
+    }
     ]
     return (
         <div className="linegraph">
@@ -35,7 +39,16 @@ function LineGraph() {
                     }
                 ]
             }}
-            // type={line}
+            options={{
+                scales:{
+                    yAxes:[{
+                        ticks:{
+                            display: false
+                        }
+                    }]
+                }
+            }}
+         
             
             />
             
