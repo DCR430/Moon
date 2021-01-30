@@ -4,7 +4,11 @@ import './Stats.css'
 function Stats() {
     return (
         <div className="stats">
-            <div></div>
+            <div className="stats_container">
+                <div className="stats_header">
+                    <p>Stocks</p>
+                </div>
+            </div>
             
         </div>
     )
