@@ -40,6 +40,13 @@ function LineGraph() {
                 ]
             }}
             options={{
+                legend:{
+                    display:false
+                },
+                tooltips:{
+                    mode:"index",
+                    intersect:false
+                }, 
                 scales:{
                     yAxes:[{
                         ticks:{
