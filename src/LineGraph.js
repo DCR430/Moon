@@ -50,7 +50,7 @@ function LineGraph() {
                         data:  graphData,
                         backgroundColor:"transparent",
                         borderColor:"#f0c420",
-                        borderwidth:3,
+                        borderwidth:2,
                         pointBorderColor: "#5AC53B",
                         pointBackgroundColor:"#5AC53B",
                         pointHoverBackgroundColor:"#f0c420",
@@ -80,6 +80,7 @@ function LineGraph() {
                         },
                         gridLines: {
                             color: "rgba(0, 0, 0, 0)",
+                            zeroLineColor: 'transparent',
                         }
                     }],
                     yAxes:[{
@@ -88,6 +89,7 @@ function LineGraph() {
                         },
                         gridLines: {
                             color: "rgba(0, 0, 0, 0)",
+                            zeroLineColor: 'transparent',
                         }
                     }]
                 }
