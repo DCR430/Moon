@@ -7,7 +7,7 @@ padding: 0 24px;
 }
 
 .row :hover{
-background-color: midnightblue;
+background-color: red;
 cursor: pointer;
 }
 
@@ -40,5 +40,5 @@ cursor: pointer;
 }
 
 .row_percentage{
-    color:#f0c420
+    color:midnightblue;
 }
