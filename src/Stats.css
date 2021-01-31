@@ -1,5 +1,5 @@
 .stats{
-    background-color:#f0c420;
+    background-color:red;
     flex: 0.3;
     flex-shrink: 0;
     padding: 0 30px 30px 30px;
@@ -10,7 +10,7 @@
   .stats_container{
       flex-direction: column;
       flex: 1;
-      background-color:#f0c420;
+      background-color:red;
       /* border-radius: 5x;
       border:1px solid #f0c420; */
   }
