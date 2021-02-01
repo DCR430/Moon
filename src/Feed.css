@@ -49,3 +49,29 @@
        font-weight: 700;
        margin-bottom:8px;
    }
+
+   .popularlist_intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+
+   }
+
+   .popularlist_section{
+       margin-top: 60px;
+   }
+
+   .popularlist_badges{
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .popularlists_badges .topic__badge {
+    border: 1px solid #31363A;
+    background-color: transparent;
+    color: white;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    
+  }
