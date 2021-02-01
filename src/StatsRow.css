@@ -6,9 +6,10 @@ align-items: center;
 padding: 0 24px;
 }
 
-.row :hover{
-background-color: red;
+.row:hover{
+background-color:limegreen;
 cursor: pointer;
+border-radius: 10px;
 }
 
 .row_intro h1{
