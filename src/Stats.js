@@ -5,17 +5,18 @@ import StatsRow from './StatsRow.js'
 import {db} from './Firebase'
 
 
+const tempStockData=[]
 const TOKEN = "c0as7qf48v6sc0grrrp0"
 const BASE_URL = "https://finnhub.io/api/v1/quote"
 function Stats() {
 
     const [stockData, setstockData] = useState([])
-    const [myStocks, setMyStocks] = useState([])
+    const [myStocks, setmyStocks] = useState([])
 
     const getMyStocks=()=>{
         db
         .collection('myStocks')
-        .onSnapshot(snapshot =>{
+        .onSnapshot(snapshot => {
             let promises = [];
             let tempData = []
             snapshot.docs.map((doc) => {
@@ -29,7 +30,8 @@ function Stats() {
               })
             )})
             Promise.all(promises).then(()=>{
-                setMyStocks(tempData);
+                setmyStocks(tempData);
+                // console.log(tempData)
         })
     })
 }
@@ -43,11 +45,10 @@ function Stats() {
      }
 
     useEffect(() => {
-        let tempStockData=[]
-        const stocksList = ["AAPL","GME","AMC","PENN","NOK","ABT","NAKD","SNDL","TSLA","FB","AMZN","BABA","NFLX","TWTR","UBER",]
+        const stocksList = ["AAPL","GME","AMC","PENN","NOK","ABT","NAKD","SNDL"]
 
-        let promises = [];
         getMyStocks();
+        let promises = [];
         stocksList.map((stock)=>{
             promises.push(
                 getStocksData(stock)
@@ -75,7 +76,7 @@ function Stats() {
                 </div>
                 <div className="stats_conent">
                     <div className="stats_row">
-                    {myStocks.map((stock) => (
+                    {myStocks.map((stock)=>(
                             <StatsRow
                             key={stock.data.ticker}
                             name={stock.data.ticker}
@@ -83,7 +84,7 @@ function Stats() {
                             shares={stock.data.shares}
                             price={stock.info.c}
                         />
-                            ))}
+                    ))}
                     </div>
                 </div>
             <div className="stats_header">
@@ -91,14 +92,14 @@ function Stats() {
             </div>
             <div className="stats_conent">
                 <div className="stats_row">
-                    {stockData.map((stock)=>
+                    {stockData.map((stock)=>(
                     <StatsRow
                  key={stock.name}
                  name={stock.name}
                  openPrice={stock.o}
                  price={stock.c}
                  />
-             )}
+                    ))}
               </div>
             </div>
         </div>
