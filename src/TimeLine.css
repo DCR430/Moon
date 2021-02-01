@@ -1,0 +1,26 @@
+.timeline_container{
+    display: flex;
+    border-bottom: 1px solid limegreen
+}
+.timeline_buttons_container{
+    display: flex;
+    align-items: center;
+    margin-top: 90px;
+
+
+}
+
+.timeline_button{
+font-weight: bold;
+padding: 10px 10px 20px 10px;
+cursor: pointer;
+}
+
+.timeline_button:hover{
+    color:limegreen
+}
+
+.timeline_button.active{
+    color:limegreen;
+    border-bottom:2px solid red ;
+}

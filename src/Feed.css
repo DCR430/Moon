@@ -21,3 +21,11 @@
         display: flex;
         flex-direction: column;
    }
+
+   .buying_section{
+       display: flex;
+       justify-content: space-between;
+       border-bottom: 1px solid limegreen;
+       padding:20px 0px 20px 0px;
+
+   }

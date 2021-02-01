@@ -5,9 +5,10 @@
     padding: 0 30px 30px 30px;
     color: white;
     font-weight: bold;
-    border-radius: 5px;
-    border:3px solid #f0c420;
+    border-radius: 10px;
+    border:5px solid limegreen;
     overflow: auto;
+    margin-left: 25px;
   }
 
   .stats_container{
