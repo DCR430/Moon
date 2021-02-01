@@ -19,8 +19,8 @@ cursor: pointer;
 .timeline_button:hover{
     color:limegreen
 }
-
+/* 
 .timeline_button.active{
     color:limegreen;
     border-bottom:2px solid red ;
-}
+} */
