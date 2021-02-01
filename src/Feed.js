@@ -20,7 +20,12 @@ function Feed() {
                 <div className="buying_section">
                     <h2>Buying Power</h2>
                     <h2>$42.77</h2>
-
+                </div>
+                <div className="market_section">
+                    <div className="market_box">
+                        <p>Stocks going</p>
+                        <h1>To The Moon!🚀</h1>
+                    </div>
                 </div>
              </div>
         </div>

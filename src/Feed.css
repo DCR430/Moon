@@ -27,5 +27,25 @@
        justify-content: space-between;
        border-bottom: 1px solid limegreen;
        padding:20px 0px 20px 0px;
+       margin-bottom:60px;
 
+   }
+
+   .market_section{
+        /* display: flex; */
+   }
+
+   .market_box{
+        height: 10vh;
+        padding: 20px;
+        border: 1px solid limegreen;
+        border-radius: 4px; 
+        text-align: left;
+   }
+   .market_box p{
+       font-size: 15px;
+       color:#f0c420 ;
+       text-transform: uppercase;
+       font-weight: 700;
+       margin-bottom:8px;
    }
