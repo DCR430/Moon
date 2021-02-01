@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react'
 import './Stats.css'
 import axios from 'axios'
 import StatsRow from './StatsRow.js'
+import {db} from './Firebase'
 
 
 const TOKEN = "c0as7qf48v6sc0grrrp0"
@@ -9,7 +10,29 @@ const BASE_URL = "https://finnhub.io/api/v1/quote"
 function Stats() {
 
     const [stockData, setstockData] = useState([])
-    const [myStocks, setmyStocks] = useState([])
+    const [myStocks, setMyStocks] = useState([])
+
+    const getMyStocks=()=>{
+        db
+        .collection('myStocks')
+        .onSnapshot(snapshot =>{
+            let promises = [];
+            let tempData = []
+            snapshot.docs.map((doc) => {
+              promises.push(getStocksData(doc.data().ticker)
+              .then(res => {
+                tempData.push({
+                  id: doc.id,
+                  data: doc.data(),
+                  info: res.data
+                })
+              })
+            )})
+            Promise.all(promises).then(()=>{
+                setMyStocks(tempData);
+        })
+    })
+}
 
     const getStocksData=(stock)=>{
         return axios
@@ -24,6 +47,7 @@ function Stats() {
         const stocksList = ["AAPL","GME","AMC","PENN","NOK","ABT","NAKD","SNDL","TSLA","FB","AMZN","BABA","NFLX","TWTR","UBER",]
 
         let promises = [];
+        getMyStocks();
         stocksList.map((stock)=>{
             promises.push(
                 getStocksData(stock)
@@ -51,7 +75,15 @@ function Stats() {
                 </div>
                 <div className="stats_conent">
                     <div className="stats_row">
-              {/* current stocks */}
+                    {myStocks.map((stock) => (
+                            <StatsRow
+                            key={stock.data.ticker}
+                            name={stock.data.ticker}
+                            openPrice={stock.info.o}
+                            shares={stock.data.shares}
+                            price={stock.info.c}
+                        />
+                            ))}
                     </div>
                 </div>
             <div className="stats_header">
