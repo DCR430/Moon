@@ -9,6 +9,7 @@ const BASE_URL = "https://finnhub.io/api/v1/quote"
 function Stats() {
 
     const [stockData, setstockData] = useState([])
+    const [myStocks, setmyStocks] = useState([])
 
     const getStocksData=(stock)=>{
         return axios
@@ -20,7 +21,7 @@ function Stats() {
 
     useEffect(() => {
         let tempStockData=[]
-        const stocksList = ["AAPL","GME","AMC","PENN","NOK","ABT","NAKD","SNDL"]
+        const stocksList = ["AAPL","GME","AMC","PENN","NOK","ABT","NAKD","SNDL","TSLA","FB","AMZN","BABA","NFLX","TWTR","UBER",]
 
         let promises = [];
         stocksList.map((stock)=>{

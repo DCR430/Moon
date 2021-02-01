@@ -1,12 +1,13 @@
 .stats{
     background-color:red;
     flex: 0.3;
-    flex-shrink: 0;
+    /* flex-shrink: ; */
     padding: 0 30px 30px 30px;
     color: white;
     font-weight: bold;
     border-radius: 5px;
     border:3px solid #f0c420;
+    overflow: auto;
   }
 
   .stats_container{
@@ -15,6 +16,8 @@
       background-color:red;
       /* border-radius: 5x;
       border:1px solid #f0c420; */
+    
+      
   }
 
   .stats_header{
@@ -25,5 +28,6 @@
       border-bottom: 1px solid #f0c420;
       padding: 20px 20px 10px 20px;
       font-weight: bold;
+     
 
       }
