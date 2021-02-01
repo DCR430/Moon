@@ -20,6 +20,7 @@ function Stats() {
             let promises = [];
             let tempData = []
             snapshot.docs.map((doc) => {
+                console.log(doc.data())
               promises.push(getStocksData(doc.data().ticker)
               .then(res => {
                 tempData.push({
@@ -30,8 +31,8 @@ function Stats() {
               })
             )})
             Promise.all(promises).then(()=>{
-                setmyStocks(tempData);
                 // console.log(tempData)
+                setmyStocks(tempData);
         })
     })
 }
@@ -87,7 +88,7 @@ function Stats() {
                     ))}
                     </div>
                 </div>
-            <div className="stats_header">
+            <div className="stats_header stats_list">
                 <p>Lists</p>
             </div>
             <div className="stats_conent">
