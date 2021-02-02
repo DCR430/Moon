@@ -22,5 +22,5 @@ cursor: pointer;
 
 .timeline_button.active{
     color:limegreen;
-    border-bottom:2px solid red ;
+    border-bottom:2px solid #FDC862 ;
 }

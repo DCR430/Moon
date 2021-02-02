@@ -25,11 +25,11 @@
       font-size: 16px;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #f0c420;
+      border-bottom: 1px solid #FDC862;
       padding: 20px 20px 10px 20px;
       font-weight: bold;
      }
 
      .stats_list{
-        border-top: 1px solid #f0c420;
+        border-top: 1px solid #FDC862;
      }

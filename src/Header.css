@@ -22,7 +22,7 @@ margin-top:-30px;
 .header_searchContainer{
     height: 20px;
     border-radius: 4px;
-    border: solid 1px #f0c420;
+    border: solid 1px #FDC862;
     width: 375px;
 }
 
@@ -49,5 +49,5 @@ margin-top:-30px;
     padding: 0 10px;
 }
 .header_menuItems a:hover {
-color:#f0c420;
+color: limegreen;
 }
