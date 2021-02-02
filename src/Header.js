@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from './logo_rocket.png'
+import Logo from './moon.jpg'
 import './Header.css'
 
 function Header() {
@@ -7,7 +7,7 @@ function Header() {
         <div className="header_wrapper">
             {/* logo */}
             <div className="header_logo">
-                <img src={Logo} width={35}/>
+                <img src={Logo} width={175}/>
             </div>
             {/* search */}
             <div className="header_search">
