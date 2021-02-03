@@ -6,7 +6,7 @@ import {db} from './Firebase'
 
 
 const tempStockData=[]
-const TOKEN = "c0as7qf48v6sc0grrrp0"
+const TOKEN = "c0d168n48v6oo0bfd9og"
 const BASE_URL = "https://finnhub.io/api/v1/quote"
 function Stats() {
 
@@ -46,7 +46,7 @@ function Stats() {
      }
 
     useEffect(() => {
-        const stocksList = ["AAPL","GME","AMC","PENN","NOK","ABT","NAKD","SNDL","TSLA","FB","UBER","PRTY"]
+        const stocksList = ["AAPL","GME","AMC","PENN","NOK","ABT","NAKD","SNDL","TSLA","FB","UBER","PRTY","AMZN"]
 
         getMyStocks();
         let promises = [];
