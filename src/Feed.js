@@ -49,13 +49,7 @@ function Feed() {
                         </div>
                         <div className="popularlist_badges ">
                             {popularTopics.map((topic) =>(
-                                <Chip
-                                className="topic_badge"
-                                variant="outlined"
-                                lable={topic}
-                                avatar={<Avatar
-                                src={`https://avatars.dicebear.com/api/human/${topic}.svg`}/>}
-                                />
+                                
                             ))}
                         
 

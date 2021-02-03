@@ -67,8 +67,8 @@
     flex-wrap: wrap;
    }
 
-   .popularlists_badges .topic__badge {
-    border: 1px solid #31363A;
+   .popularlists_badges .topic_badge {
+    border: 1px solid ;
     background-color: transparent;
     color: white;
     margin-right: 8px;
