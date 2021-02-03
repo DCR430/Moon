@@ -4,8 +4,12 @@ import stock from './stock.svg'
 
 function StatsRow(props) {
     const percentage =((props.price - props.openPrice/props.openPrice) * 100)
+    const buyStock=()=>{
+            console.log( "buy",props.name)
+
+    }
     return (
-        <div className="row">
+        <div className="row" onClick={buyStock}>
             <div className="row_intro">
                 <h1>{props?.name}</h1>
                 <p>{props.shares && (props.shares + " shares")}</p>

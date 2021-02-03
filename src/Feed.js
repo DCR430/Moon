@@ -2,9 +2,10 @@ import React, {useState} from 'react'
 import './Feed.css'
 import LineGraph from './LineGraph'
 import TimeLine from './TimeLine'
-import Chip from '@material-ui/core/Chip'
-import {Avatar} from '@material-ui/core'
-
+// import Chip from '@material-ui/core/Chip'
+// import {Avatar} from '@material-ui/core'
+import Chip from "./Chip"
+import logo from "./logo_rocket.png"
 
 
 function Feed() {
@@ -47,9 +48,14 @@ function Feed() {
                             <h1>Popular Stocks</h1>
                             <p>Show More</p>
                         </div>
-                        <div className="popularlist_badges ">
+                        <div className="popularlist_badges">
                             {popularTopics.map((topic) =>(
-                                
+                                <Chip
+                                label={topic}
+                                image={logo}
+                                />
+
+                               
                             ))}
                         
 

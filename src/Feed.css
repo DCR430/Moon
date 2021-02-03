@@ -62,10 +62,6 @@
        margin-top: 60px;
    }
 
-   .popularlist_badges{
-    display: flex;
-    flex-wrap: wrap;
-   }
 
    .popularlists_badges .topic_badge {
     border: 1px solid ;
