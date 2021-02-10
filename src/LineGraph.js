@@ -8,7 +8,7 @@ function LineGraph() {
 
     const data = [
         {
-            x:25,
+            x:99,
             y:45
 
         },
