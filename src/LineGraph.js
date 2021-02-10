@@ -14,7 +14,7 @@ function LineGraph() {
         },
         {
             x:15,
-            y:12
+            y:37
 
         },
         {
