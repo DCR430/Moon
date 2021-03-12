@@ -8,7 +8,7 @@ function TimeLine() {
                 <div className="timeline_button">LIVE</div>
                 <div className="timeline_button">1D</div>
                 <div className="timeline_button active">1W</div>
-                <div className="timeline_button">3M</div>
+                <div className="timeline_button">6M</div>
                 <div className="timeline_button">1Y</div>
                 <div className="timeline_button">ALL</div>
              </div>
