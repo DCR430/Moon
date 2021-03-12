@@ -6,7 +6,7 @@ import {db} from './Firebase'
 
 
 const tempStockData=[]
-const TOKEN = "c0d168n48v6oo0bfd9og"
+const TOKEN = "c15693748v6plao68vbg"
 const BASE_URL = "https://finnhub.io/api/v1/quote"
 function Stats() {
 
